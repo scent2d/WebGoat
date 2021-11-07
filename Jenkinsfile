@@ -1,16 +1,16 @@
 node {
     timestamps {
         
-        stage('First echo') {
-            echo "Jenkins Test - 1"
-        }
-        
-        stage ('Sleeping') {
-            sleep 30
+        stage('[+] git clone') {
+            git branch: 'develop', url: 'https://github.com/scent2d/WebGoat.git'
         }
               
-        stage('Second echo') {
-            echo "Jenkins Test - 2"
+        stage('[+] SCA TEST') {
+            sh '''
+                cd webgoat-container
+                /home/scent2d/tools/dependency-check/check.sh
+            '''
+            echo 'SCA TEST Complete'
         }
         
     }
