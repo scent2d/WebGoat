@@ -5,8 +5,19 @@ node {
             git branch: 'develop', url: 'https://github.com/scent2d/WebGoat.git'
         }
 
+        stage('[+] SIS(Sensitive Information Scan) phase') {
+            // truffleHog
+
+        }
+
         stage('[+] SAST(Static Application Security Testing) phase') {
+            // Sonarqube
             
+        }
+
+        stage('[+] DAST(Dynamic Application Security Testing) phase') {
+            // OWASP ZAP
+
         }
               
         stage('[+] SCA(Software Composition Analysis) phase') {
@@ -20,6 +31,12 @@ node {
         stage('[+] SCA Quality Gate') {
 
         }
+
+        stage('[+] Container Security phase') {
+            
+        }
+
+        
         
     }
 }
