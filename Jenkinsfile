@@ -10,13 +10,25 @@ node {
 
         }
 
+        stage('[+] SIS Quality Gate') {
+
+        }
+
         stage('[+] SAST(Static Application Security Testing) phase') {
             // Sonarqube
             
         }
 
+        stage('[+] SAST Quality Gate') {
+
+        }
+
         stage('[+] DAST(Dynamic Application Security Testing) phase') {
             // OWASP ZAP
+
+        }
+
+        stage('[+] DAST Quality Gate') {
 
         }
               
@@ -34,6 +46,14 @@ node {
 
         stage('[+] Container Security phase') {
             
+        }
+
+        stage('[+] Container Quality Gate') {
+
+        }
+
+        stage('[+] VM(Vulnerability Management) phase') {
+
         }
 
         
