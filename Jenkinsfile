@@ -11,7 +11,7 @@ node {
         }
 
         stage('[+] SIS Quality Gate') {
-
+            
         }
 
         stage('[+] SAST(Static Application Security Testing) phase') {
@@ -41,7 +41,7 @@ node {
         }
 
         stage('[+] SCA Quality Gate') {
-
+            // OWASP SCA
         }
 
         stage('[+] Container Security phase') {
